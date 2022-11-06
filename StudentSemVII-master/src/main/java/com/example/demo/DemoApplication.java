@@ -16,6 +16,7 @@ public class DemoApplication {
 	@GetMapping
 	public String hello()
 	{
+		String asd;
 		return "Hello World 12345";
 	}
 }
