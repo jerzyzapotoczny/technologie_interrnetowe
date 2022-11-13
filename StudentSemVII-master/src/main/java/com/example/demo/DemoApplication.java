@@ -5,6 +5,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.time.LocalDate;
+import java.util.List;
+
+import static java.util.Calendar.MARCH;
+
 @SpringBootApplication
 @RestController
 public class DemoApplication {
@@ -13,9 +18,5 @@ public class DemoApplication {
 		SpringApplication.run(DemoApplication.class, args);
 	}
 
-	@GetMapping
-	public String hello()
-	{
-		return "Hello World 12345";
-	}
+
 }
