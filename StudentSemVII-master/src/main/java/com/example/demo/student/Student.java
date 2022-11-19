@@ -48,6 +48,12 @@ public class Student {
         this.age = age;
     }
 
+    public Student(String name, String email, LocalDate dob) {
+        this.name = name;
+        this.email = email;
+        this.dob = dob;
+    }
+
     //endregion
     //region getters and setters
 
@@ -84,7 +90,7 @@ public class Student {
     }
 
     public Integer getAge() {
-        return Period.between();
+        return Period.between(LocalDate.now(), dob).getYears();
     }
 
     public void setAge(Integer age) {
